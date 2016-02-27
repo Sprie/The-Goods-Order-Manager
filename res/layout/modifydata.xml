@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg1">
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_order"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:text="@string/purchaser1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+    	<EditText 
+      	  android:id="@+id/modify_purchaser"
+      	  android:layout_width="match_parent"
+      	  android:layout_height="wrap_content"
+      	  android:hint="@string/hint_purchaser"
+       	  android:textSize="18sp"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:text="@string/total_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            />
+    	<EditText 
+      	  android:id="@+id/modify_price"
+      	  android:layout_width="match_parent"
+      	  android:layout_height="wrap_content"
+      	  android:hint="@string/hint_total_price"
+       	  android:textSize="18sp"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:text="@string/deposit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+        <EditText 
+            android:id="@+id/modify_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_deposit"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:text="@string/retainage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textSize="18sp"/>
+        <EditText 
+            android:id="@+id/modify_retainage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_retainage"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:text="@string/salesman1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+        <EditText 
+            android:id="@+id/modify_salesman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_salesman"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/order_date1" 
+            android:textSize="18sp"/>
+
+        <DatePicker 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/datepicker"
+        android:layout_gravity="center_horizontal"
+        android:calendarViewShown="false"/>
+    </LinearLayout>
+
+    <Button 
+        android:text="@string/modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@id/modify"/>
+    <Button 
+        android:text="@string/back"
+        android:id="@id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        />
+</LinearLayout>
